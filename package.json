@@ -1,5 +1,5 @@
 {
-  "name": "apigateway",
+  "name": "apigateway-deploy-multi-stages",
   "version": "0.1.0",
   "bin": {
     "apigateway": "bin/apigateway.js"
@@ -11,17 +11,26 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.85.0",
+    "@aws-cdk/assert": "1.80.0",
+    "@types/aws-lambda": "^8.10.70",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "aws-cdk": "1.80.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "1.85.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.85.0",
+    "@aws-cdk/aws-apigateway": "1.80.0",
+    "@aws-cdk/aws-ecs": "1.80.0",
+    "@aws-cdk/aws-iam": "1.80.0",
+    "@aws-cdk/aws-lambda": "1.80.0",
+    "@aws-cdk/aws-logs": "1.80.0",
+    "@aws-cdk/aws-sqs": "1.80.0",
+    "@aws-cdk/aws-ssm": "1.80.0",
+    "@aws-cdk/core": "1.80.0",
+    "aws-lambda": "^1.0.6",
     "source-map-support": "^0.5.16"
   }
 }
